@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버페이 X 신한카드</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <h1><img src="images/shinhancard_logo.png" alt="신한카드"> 카드신청</h1>
+        </div>
+    </header>
+    <section class="card_info_wrap">
+        <div class="inner">
+            <div class="info_area_top">
+                <h2>카드 정보</h2>
+                <div class="page_num"></div>
+            </div>
+            <div class="check">
+                <p>신청전에 확인하세요 <i class="fa-solid fa-angle-up"></i></p>
+                <ul>
+                    <li>카드신청을 위해 주민등록등 또는 운전면허증을 준비해주세요.</li>
+                    <li>카드신청은 약 2~4분 정도 소요됩니다.</li>
+                    <li>해당 카드는 카드신청 후 발급확정 시 NAVER Pay에 자동 등록됩니다.</li>
+                </ul>
+            </div>
+            <form>
+                <h2>네이버페이 라인프렌즈 신한카드</h2>
+                <p>카드 디자인을 선택해주세요.</p>
+                <div class="card_info">
+                    <div class="card_wrap">
+                        <input type="radio" id="contactChoice1"
+                         name="contact" value="card1">
+                        <label for="contactChoice1" class="pink_card">
+                            <div><img src="images/pink_card.png" alt="핑크카드"></div>
+                        </label>
+                    </div>
+                    <div class="card_wrap">
+                        <input type="radio" id="contactChoice2"
+                         name="contact" value="card2">
+                        <label for="contactChoice2" class="blue_card">
+                            <div><img src="images/blue_card.png" alt="블루카드"></div>
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="application_wrap">
+        <div class="inner">
+            <div class="application">
+                <div class="overseas_select">
+                    <h3>해외 결제 기능<span href="#">?</span></h3>
+                    <div class="select_area">
+                        <div class="select_wrap">
+                            <input type="radio" id="contactChoice3"
+                             name="overseas" value="visa">
+                            <label for="contactChoice1" class="pink_card">
+                                <div><img src="images/visa.png" alt="핑크카드"></div>
+                            </label>
+                        </div>
+                        <div class="select_wrap">
+                            <input type="radio" id="contactChoice4"
+                             name="overseas" value="local">
+                            <label for="contactChoice4" class="blue_card">
+                                <div><img src="images/local.png" alt="블루카드"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="deferred_trafficcard ">
+                    <h3>후불 교통</h3>
+                    <button type="button">신청</button>
+                    <button type="button">신청 안 함</button>
+                </div>
+                <form class="offeror_info">
+                    <label>신청인정보
+                      <input id="submitted-name" autocomplete="name" placeholder="김신한">
+                      <br>
+                      <input id="submitted-name" autocomplete="name" placeholder="SHIN HAN">
+                      <input id="submitted-name" autocomplete="name" placeholder="KIM">
+                      <p>여권의 영문이름과 동일한지 확인해주세요.</p>
+                      <input id="password"type="password" placeholder="주민등록록번호 (-) 없이 입력">
+                      <br>
+                      <select id="phone">
+                        <option value="010" selected>010</option>
+                        <option value="011">011</option>
+                        <option value="016">016</option>
+                      </select>
+                      <input id="phone"type="phone" placeholder="휴대폰번호 (-) 없이 입력">
+                    </label>
+                </form>
+                <div class="agreement">
+                    <h3>약관동의</h3>
+                    <div>
+                        <input type="checkbox" name="collect" id="collect">
+                        <label for="peas">고객정보 수집, 이용 전체 동의</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="use" id="use">
+                        <label for="peas">개인정보 이용 및 제공 동의</label>
+                    </div>주민번
+                    <div>
+                        <input type="checkbox" name="identifier" id="identifier">
+                        <label for="peas">고유식별정보처리에 관한 동의</label>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>※ 특정금융정보법상 고객확인 대상 여부 확인 목적으로 귀하의 주민번호를 이용하여 당사 고객여부 확인이 필요합니다.</p>
+                        <p>귀하는 주민번호 이용을 거부할 수 있으나, 이용 거부 시 카드 발급이 거절됩니다. 주민번호 이용 동의 시 아래 [다음] 버튼 선택 바랍니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <button>다음</button>
+    </footer>
+</body>
+</html>
