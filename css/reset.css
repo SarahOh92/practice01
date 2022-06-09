@@ -15,10 +15,11 @@ html {
     overflow-x: hidden;
 }
 body{
-    font-family: '나눔 고딕','Nanum Gothic','맑은 고딕', 'MalgunGothic',sans-serif;
+    font-family: '나눔고딕','Nanum Gothic','맑은 고딕', 'MalgunGothic',sans-serif;
     color: #333;
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: 400;
+    line-height: 1.5;
 }    
     
 article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section,div{
@@ -40,27 +41,18 @@ a{
 }
 img{
     vertical-align:top;
-    }
+}
 
 .clearfix::after {
     content: "";
     display: block;
     clear: both;
 }
-
-input[type="text"], input[type="search"], img, select {
+input[type="text"], input[type="search"], img {
     vertical-align: middle;
-    
-}
-input[type="search"]{
-    padding: 1px 2px;
-    font-family: 'Noto Sans KR',sans-serif;
-    font-size: 14px;
-    appearance: auto;
-    box-sizing: border-box;
 }
 button, input, pre, select, textarea {
-    font-family: Noto Sans KR,sans-serif;
+    font-family: '나눔고딕','Nanum Gothic','맑은 고딕', 'MalgunGothic',sans-serif;
     font-size: 14px;
     outline: none;
 }
