@@ -221,13 +221,17 @@ h1 img{
 }
 .offeror_info select{
     height: 52px;
-    width: 124px;
+    width: 116px;
 }
 .offeror_info .gray{
     color: #999;
     font-size: .8rem;
     padding: 6px 0;
 }
+.offeror_info .tel_area{
+    display: flex;
+    justify-content: space-between;
+}
 .offeror_info .tel{
-    width: 270px;
+    width: 275px;
 }
