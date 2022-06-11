@@ -51,6 +51,15 @@ img{
 input[type="text"], input[type="search"], img {
     vertical-align: middle;
 }
+input[type="radio" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    padding: initial;
+    border: initial;
+}
 button, input, pre, select, textarea {
     font-family: '나눔고딕','Nanum Gothic','맑은 고딕', 'MalgunGothic',sans-serif;
     font-size: 14px;

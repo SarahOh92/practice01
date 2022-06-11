@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="inner">
-            <h1><img src="images/shinhancard_logo.png" alt="신한카드"> 카드신청</h1>
+            <h1><img src="images/shinhancard_logo.png" alt="신한카드"><span>카드신청</span></h1>
         </div>
     </header>
     <section class="card_info_wrap">
@@ -47,7 +47,7 @@
                 <div class="card_info">
                     <div class="card_wrap">
                         <input type="radio" id="contactChoice1"
-                         name="contact" value="card1">
+                         name="contact" value="card1" checked>
                         <label for="contactChoice1" class="pink_card">
                             <img src="images/pink_card.png" alt="핑크카드"> 
                         </label>
@@ -67,11 +67,11 @@
         <div class="inner">
             <div class="application">
                 <div class="overseas_select">
-                    <h3>해외 결제 기능<button>?</button></h3>
+                    <h3>해외 결제 기능<button><span>?</span></button></h3>
                     <div class="select_area">
                         <div class="select_wrap">
                             <input type="radio" id="contactChoice3"
-                             name="overseas" value="visa">
+                             name="overseas" value="visa" checked>
                             <label for="contactChoice3">
                                 <img src="images/visa.png" alt="해외">
                             </label>
@@ -90,7 +90,7 @@
                     <div class="select_area">
                         <div class="select_wrap">
                             <input type="radio" id="contactChoice5"
-                             name="trafficcard" value="신청">
+                             name="trafficcard" value="신청" checked>
                             <label for="contactChoice5">신청</label>
                         </div>
                         <div class="select_wrap">
@@ -106,8 +106,8 @@
                         <input id="submitted-name" autocomplete="name" class="ko_name" value="김신한">
                         <br>
                         <div class="name_area">
-                            <input id="given-name" autocomplete="name" value="SHIN HAN" class="given_name">
                             <input id="family-name" autocomplete="name" value="KIM" class="family_name">
+                            <input id="given-name" autocomplete="name" value="SHIN HAN" class="given_name">
                         </div>
                         <p class="gray">여권의 영문이름과 동일한지 확인해주세요.</p>
                         <input id="password" type="password" placeholder="주민등록록번호 (-) 없이 입력" class="pwd">
@@ -122,31 +122,47 @@
                         </div>
                     </div>
                 </div>
-                <div class="agreement">
+                <div class="agreement_area">
                     <h3>약관동의</h3>
-                    <div>
-                        <input type="checkbox" name="collect" id="collect">
-                        <label for="peas">고객정보 수집, 이용 전체 동의</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="use" id="use">
-                        <label for="peas">개인정보 이용 및 제공 동의</label>
-                    </div>주민번
-                    <div>
-                        <input type="checkbox" name="identifier" id="identifier">
-                        <label for="peas">고유식별정보처리에 관한 동의</label>
-                    </div>
-                    <hr>
-                    <div>
-                        <p>※ 특정금융정보법상 고객확인 대상 여부 확인 목적으로 귀하의 주민번호를 이용하여 당사 고객여부 확인이 필요합니다.</p>
-                        <p>귀하는 주민번호 이용을 거부할 수 있으나, 이용 거부 시 카드 발급이 거절됩니다. 주민번호 이용 동의 시 아래 [다음] 버튼 선택 바랍니다.</p>
+                    <div class="agreement">
+                        <div class="checkbox_area">
+                            <div class="checkbox">
+                                <input type="checkbox" name="collect" id="collect">
+                                <div class="collect">
+                                    <label for="collect">고객정보 수집, 이용 전체 동의</label>
+                                </div>
+                                <div class="content_wrap">
+                                    <div class="content">일시적인 시스템 장애 또는 기타 사유로 카드신청이 완료되지 못한 경우 상담원이 전화를 통해 신청을 도와드릴 수 있습니다. 동의하지 않으셔도 카드 신총청을 진행할 수 있습니다.</div>
+                                </div>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="use" id="use">
+                                <div class="use">
+                                    <label for="use" class="small">개인정보 이용 및 제공 동의</label>
+                                </div>
+                                <div class="content_wrap">
+                                    <div class="content">카드신청을 완료하지 못한 고객님께 신청을 도와드리기 위한 전화를 드리기 위해 신한카드가 고객님께서 입력하신 성명, 연락처를 동의일로 부터 5일간 수집, 이용하는데 동의합니다.</div>
+                                </div>
+                            </div>
+                            <div class="checkbox identifier_area">
+                                <input type="checkbox" name="identifier" id="identifier">
+                                <div class="identifier"><label for="identifier" class="small">고유식별정보처리에 관한 동의</label></div>
+                                <div class="content_wrap">
+                                    <div class="content">본인은 귀사가 상기 목적으로 본인의 고유식별정보(<strong>주민등록번호, 외국인등록번호</strong>)를 수집, 이용하는데 동의합니다.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="confirm_area">
+                            <p>※</p>
+                            <p class="confrim"><strong>특정금융정보법상 고객확인 대상 여부 확인 목적으로 귀하의 주민번호를 이용하여 당사 고객여부 확인이 필요합니다.</strong> <br> 귀하는 주민번호 이용을 거부할 수 있으나, 이용 거부 시 카드 발급이 거절됩니다. 주민번호 이용 동의 시 아래 [다음] 버튼 선택 바랍니다.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <footer>
-        <button>다음</button>
+        <div class="inner"><button type="submit">다음</button></div>
     </footer>
 </body>
 </html>
